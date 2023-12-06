@@ -215,6 +215,7 @@ int bigg::Application::run( int argc, char** argv, bgfx::RendererType::Enum type
 	init.deviceId = deviceId;
 	init.callback = callback;
 	init.allocator = allocator;
+	init.platformData = platformData;
 	bgfx::init( init );
 
 	// Setup ImGui
