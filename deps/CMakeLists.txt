@@ -19,3 +19,4 @@ add_subdirectory( ../../glm ${CMAKE_BINARY_DIR}/glm )
 
 # imgui
 include( imgui.cmake )
+include( implot.cmake )

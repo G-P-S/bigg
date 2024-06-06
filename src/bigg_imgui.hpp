@@ -21,6 +21,7 @@ static void imguiInit( GLFWwindow* window )
 	unsigned char* data;
 	int width, height;
 	ImGui::CreateContext();
+	ImPlot::CreateContext();
 	ImGuiIO& io = ImGui::GetIO();
 
 	// Setup vertex declaration
@@ -214,6 +215,7 @@ static void imguiShutdown()
 	bgfx::destroy( imguiFontUniform );
 	bgfx::destroy( imguiFontTexture );
 	bgfx::destroy( imguiProgram );
+	ImPlot::DestroyContext();
 	ImGui::DestroyContext();
 }
 

@@ -6,6 +6,7 @@
 
 #include <bgfx/bgfx.h>
 #include <imgui.h>
+#include <implot.h>
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 
